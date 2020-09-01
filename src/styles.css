@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark {
+  background-color: #1b262c;
+  color: #bbe1fa;
+}
+
+.dark button {
+  color: #000;
+}
+
+button {
+  height: 40px;
+  width: 130px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+  background-color: #00A3FF;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+}

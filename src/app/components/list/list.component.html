@@ -1,0 +1,12 @@
+<input type="text" class="input-form" placeholder="Find joke by keyword" [(ngModel)]="filterInput">
+<div class="joke-wrapper">
+  <div class="joke" *ngFor="let jokeValue of viewJokes | searchByName:filterInput">
+    <span (click)="openDetails(jokeValue.id)">
+      <span [innerHTML]="jokeValue.joke.substring(0, 100)"></span>
+      <span>...</span>
+    </span>
+  </div>
+</div>
+
+<app-pagination *ngIf="allJokes" [data]="allJokes" [page]="pageNumber" (pageChange)="onPageChange($event)"
+></app-pagination>
